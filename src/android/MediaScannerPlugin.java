@@ -68,11 +68,7 @@ public class MediaScannerPlugin extends CordovaPlugin {
                 Log.w(TAG, "Wrong action was provided: "+action);
                 return false;
             }
-        } catch (JSONException e) {
-            e.printStackTrace();
-            callbackContext.error(e.getMessage());
-            return false;
-        } catch (InterruptedException e) {
+        } catch (RuntimeException e) {
             e.printStackTrace();
             callbackContext.error(e.getMessage());
             return false;
