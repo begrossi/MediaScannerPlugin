@@ -1,0 +1,35 @@
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="br.com.brunogrossi.MediaScannerPlugin"
+    version="0.1.0">
+
+    <name>Media Scanner Plugin</name>
+
+    <description>MediaScanner should be called to add a downloaded image to Android Gallery.</description>
+    <author>Bruno E. Grossi - brunogrossi.com.br</author>
+    <keywords>android,image,photo library,gallery,mediascanner</keywords>
+
+    <engine>
+        <engine name="cordova" version=">=3.0.0" />
+    </engine>
+
+    <license>MIT</license>
+
+    <js-module src="www/MediaScannerPlugin.js" name="MediaScannerPlugin">
+        <clobbers target="cordova.plugins.MediaScannerPlugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+          <feature name="MediaScannerPlugin" >
+            <param name="android-package" value="br.com.brunogrossi.MediaScannerPlugin.MediaScannerPlugin"/>
+          </feature>
+        </config-file>
+
+        <source-file src="src/android/MediaScannerPlugin.java" 
+            target-dir="src/br/com/brunogrossi/MediaScannerPlugin" />
+
+    </platform>
+</plugin>
