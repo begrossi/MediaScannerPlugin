@@ -27,7 +27,7 @@ SOFTWARE.
  *
  * @author Bruno E. Grossi <bruno@grossi.com.br>
  */
-module.export = {
+module.exports = {
     scanFile: function(fileUri, successCallback, errorCallback) {
         cordova.exec(function() {
             successCallback && successCallback();
