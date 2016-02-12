@@ -8,14 +8,14 @@ Installation
 
 ### For Cordova 3.0.x:
 
-1. To add this plugin just type: `cordova plugin add https://github.com/begrossi/MediaScannerPlugin.git` or `phonegap local plugin add https://github.com/begrossi/MediaScannerPlugin.git`
-2. To remove this plugin type: `cordova plugin remove br.com.brunogrossi.MediaScannerPlugin` or `phonegap local plugin remove br.com.brunogrossi.MediaScannerPlugin`
+To add this plugin just type: `cordova plugin add https://github.com/begrossi/MediaScannerPlugin.git` or
+`cordova plugin add cordova-plugin-mediascanner` (using npmjs [repository](https://www.npmjs.com/package/cordova-plugin-mediascanner)).
 
 
 Usage:
 ------
 
-Call the `cordova.plugins.MediaScannerPlugin(fileUri, successCallback, errorCallback)` method.
+Call the `cordova.plugins.MediaScannerPlugin(fileUri, successCallback, errorCallback)` method after download.
 
 
 References:
