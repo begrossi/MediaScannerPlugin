@@ -15,7 +15,7 @@ To add this plugin just type: `cordova plugin add https://github.com/begrossi/Me
 Usage:
 ------
 
-Call the `cordova.plugins.MediaScannerPlugin(fileUri, successCallback, errorCallback)` method after download.
+Call the `cordova.plugins.MediaScannerPlugin.scanFile(fileUri, successCallback, errorCallback)` method after download.
 
 
 References:
