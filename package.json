@@ -3,7 +3,7 @@
   "version": "0.1.3",
   "description": "MediaScanner should be called to add a downloaded image to Android Gallery.",
   "cordova": {
-    "id": "br.com.brunogrossi.MediaScannerPlugin",
+    "id": "cordova-plugin-mediascanner",
     "platforms": [
       "android"
     ]
